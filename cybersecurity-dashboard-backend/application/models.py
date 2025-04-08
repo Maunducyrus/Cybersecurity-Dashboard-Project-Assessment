@@ -1,5 +1,10 @@
 # Create your models here.
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+class CustomUser(AbstractUser):
+    is_master_admin = models.BooleanField(default=False)
+    is_organization_admin = models.BooleanField(default=False)
 
 class Organization(models.Model):
     name = models.CharField(max_length=128)
