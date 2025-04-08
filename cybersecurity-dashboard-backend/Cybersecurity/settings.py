@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Cybersecurity.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-CORS_ALLOW_ALL_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',  # React frontend URL
 ]
 
