@@ -19,6 +19,7 @@ Backend: Python(Django)
     MySQL: As the database.
     
 Hosting:
+
     Vercel (frontend)
     AWS (backend)
       
