@@ -2,16 +2,13 @@
 
 Frontend:
 
-    React.js with TypeScript (for type safety)
 
-    Next.js (for routing and SSR capabilities)
+    React: For building the user interface.
+    Clerk: For authentication and user management.
+    Axios or Fetch API: For making API requests to the backend.
+    Chart.js or Recharts: For displaying graphs and charts.
+    Material-UI or Ant Design: For UI components and styling.
 
-    Tailwind CSS (for modern, responsive styling)
-
-    Chart.js (for dashboard visualizations)
-
-    React Query or SWR (for data fetching)
-  
 Backend:
 
     Django with Django REST Framework (Python)
