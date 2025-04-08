@@ -24,4 +24,9 @@ Backend:
 
 Authentication:
       Clerk (as you specified, excellent choice for auth)
+Hosting:
+
+    Vercel (frontend)
+
+    Railway or AWS (backend)
       
