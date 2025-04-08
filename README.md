@@ -11,19 +11,14 @@ Frontend: Reactjs
 
 Backend: Python(Django)
 
-    Django with Django REST Framework (Python)
-
-    PostgreSQL (database)
-
-    Celery (for background tasks/notifications)
-
-    Redis (for caching and Celery broker)
-
-Authentication:
-      Clerk (as you specified, excellent choice for auth)
+   
+    Django: For building the backend API.
+    Django ORM: For database management.
+    Celery: For handling background tasks like sending notifications.
+    Redis: As a message broker for Celery.
+    MySQL: As the database.
 Hosting:
 
     Vercel (frontend)
-
-    Railway or AWS (backend)
+    AWS (backend)
       
