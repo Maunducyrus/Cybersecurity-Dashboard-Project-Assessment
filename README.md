@@ -17,8 +17,8 @@ Backend: Python(Django)
     Celery: For handling background tasks like sending notifications.
     Redis: As a message broker for Celery.
     MySQL: As the database.
+    
 Hosting:
-
     Vercel (frontend)
     AWS (backend)
       
