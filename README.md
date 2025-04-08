@@ -9,7 +9,7 @@ Frontend: Reactjs
     Chart.js or Recharts: For displaying graphs and charts.
     Material-UI or Ant Design: For UI components and styling.
 
-Backend:
+Backend: Python(Django)
 
     Django with Django REST Framework (Python)
 
