@@ -43,3 +43,23 @@ Frontend Components and Pages
         Educational Resource Tab: View educational content.
         Employee Manager Tab: List and manage employees.
 
+Backend Structure
+
+    User Management
+        Use Clerk for authentication.
+        Create endpoints for managing user roles and permissions.
+
+    Organization Management
+        Endpoints to add, edit, and view organizations.
+        Endpoints to manage subscriptions.
+
+    Threat Updates
+        Endpoint to send and retrieve threat updates.
+
+    Educational Resources
+        Endpoint to upload and retrieve educational resources.
+
+    Employee Management
+        Endpoints to add, edit, and delete employees.
+
+
