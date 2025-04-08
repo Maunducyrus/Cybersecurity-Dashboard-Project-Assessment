@@ -22,4 +22,24 @@ Hosting:
 
     Vercel (frontend)
     AWS (backend)
-      
+
+Frontend Components and Pages
+
+    Landing Page
+    
+        Modern, minimalistic design with "Access Dashboard" button.
+
+    Master-Admin Dashboard
+    
+        Overview Tab: Shows summary with graphs.
+        Threat Update Tab: Form to send messages.
+        Educational Resources Tab: Form to upload resources (videos, blog posts).
+        Organization Manager Tab: List and manage organizations.
+
+    Organization Dashboard
+    
+        Overview Tab: Shows summary with graphs.
+        Threat Update Tab: View threat updates.
+        Educational Resource Tab: View educational content.
+        Employee Manager Tab: List and manage employees.
+
