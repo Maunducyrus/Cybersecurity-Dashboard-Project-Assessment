@@ -2,9 +2,9 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from django.contrib.auth import authenticate
+from rest_framework.views import APIView
 from .models import Organization, Employee, ThreatUpdate, EducationalResource
-from .serializers import OrganizationSerializer, EmployeeSerializer, ThreatUpdateSerializer, EducationalResourceSerializer, RegisterSerializer, LoginSerializer
+from .serializers import OrganizationSerializer, EmployeeSerializer, ThreatUpdateSerializer, EducationalResourceSerializer, RegisterSerializer, LoginSerializer, UserSerializer
 
 class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
@@ -33,7 +33,7 @@ class RegisterView(viewsets.ViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginView(viewsets.ViewSet):
-    
+
     def create(self, request):
         serializer = LoginSerializer(data=request.data)
         if serializer.is_valid():
