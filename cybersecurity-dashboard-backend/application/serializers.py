@@ -29,18 +29,7 @@ class RegisterSerializer(serializers.ModelSerializer):
         )
         return user
 
-class LoginSerializer(serializers.Serializer):
-    username = serializers.CharField()
-    password = serializers.CharField(write_only=True)
-    token = serializers.SerializerMethodField()
 
-    def get_token(self, obj):
-        user = User.objects.get(username=obj['username'])
-        refresh = RefreshToken.for_user(user)
-        return {
-            'refresh': str(refresh),
-            'access': str(refresh.access_token),
-        }
 
 # models serializers
 
