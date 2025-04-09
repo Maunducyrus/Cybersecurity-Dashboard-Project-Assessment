@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.contrib.auth import authenticate
 from .models import CustomUser
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -28,8 +29,6 @@ class RegisterSerializer(serializers.ModelSerializer):
             is_organization_admin=validated_data.get('is_organization_admin', False)
         )
         return user
-
-from django.contrib.auth import authenticate
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
