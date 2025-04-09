@@ -1,6 +1,6 @@
 # Create your models here.
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser,  Group, Permission
 
 class CustomUser(AbstractUser):
     is_master_admin = models.BooleanField(default=False)
