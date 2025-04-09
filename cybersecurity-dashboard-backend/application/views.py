@@ -33,7 +33,7 @@ class RegisterView(viewsets.ViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginView(viewsets.ViewSet):
-    permission_classes = [AllowAny]
+    # permission_classes = [AllowAny]
 
     def create(self, request):
         serializer = LoginSerializer(data=request.data)
