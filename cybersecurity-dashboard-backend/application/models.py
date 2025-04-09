@@ -4,9 +4,6 @@ from django.contrib.auth.models import AbstractUser
 
 class CustomUser(AbstractUser):
     is_master_admin = models.BooleanField(default=False)
-    
-    # class Meta:
-    #     swappable = 'AUTH_USER_MODEL'
 
 class Organization(models.Model):
     name = models.CharField(max_length=128)
