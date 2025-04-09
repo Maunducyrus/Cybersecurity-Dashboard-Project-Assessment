@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractUser,  Group, Permission
 
 class CustomUser(AbstractUser):
     is_master_admin = models.BooleanField(default=False)
+    is_organization_admin = models.BooleanField(default=False)
     groups = models.ManyToManyField(
         Group,
         related_name='customuser_set',
