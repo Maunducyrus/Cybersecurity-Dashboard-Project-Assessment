@@ -15,7 +15,7 @@ import {
   Security as ThreatUpdatesIcon,
   School as EducationalResourcesIcon,
   People as EmployeeManagerIcon,
-  Business as OrganizationIcon,
+  // Business as OrganizationIcon,
   Settings as SettingsIcon,
   ExitToApp as SignOutIcon
 } from '@mui/icons-material';
