@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Sidebar from './components/Sidebar';
-import Header from './components/Header';
+// import Header from './components/Header';
 import Footer from './components/Footer';
 import Overview from './pages/Overview';
 import ThreatUpdates from './pages/ThreatUpdates';
