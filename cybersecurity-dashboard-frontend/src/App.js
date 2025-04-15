@@ -16,7 +16,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <Header />
+        {/* <Header /> */}
         <Sidebar />
         <main style={{ marginLeft: 240, paddingTop: 64 }}>
           <Routes>
