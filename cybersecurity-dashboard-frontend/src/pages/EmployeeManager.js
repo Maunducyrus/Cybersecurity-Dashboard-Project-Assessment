@@ -171,8 +171,7 @@ const EmployeeManager = () => {
   );
 
   return (
-    <Box sx={{ p: 3 }}>
-      {/* Header */}
+    <Box sx={{ p: 3}}>
       <Typography variant="h2" gutterBottom>
         Employee Manager
       </Typography>
