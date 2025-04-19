@@ -46,7 +46,7 @@ const Overview = () => {
     <Box sx={{ 
       backgroundColor: COLORS.pageBackground, 
       minHeight: '100vh', 
-      p: 4, 
+      p: 2, 
       color: COLORS.textPrimary 
     }}>
       <Typography variant="h4" gutterBottom>Dashboard Overview</Typography>
