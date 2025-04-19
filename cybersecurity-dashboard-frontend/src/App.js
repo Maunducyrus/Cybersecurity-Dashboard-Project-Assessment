@@ -18,7 +18,7 @@ const App = () => {
       <Router>
         {/* <Header /> */}
         <Sidebar />
-        <main style={{ marginLeft: 240, paddingTop: 64 }}>
+        <main style={{ marginLeft: 240}}>
           <Routes>
             <Route path="/overview" element={<Overview />} />
             <Route path="/threat-updates" element={<ThreatUpdates />} />
