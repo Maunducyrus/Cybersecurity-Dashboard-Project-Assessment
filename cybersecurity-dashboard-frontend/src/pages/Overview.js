@@ -24,8 +24,8 @@ import {
 
 // ===== COLOR PALETTE (EASILY MODIFY THESE) =====
 const COLORS = {
-  pageBackground: '#1e1e2f',       // Dark navy (main background)
-  cardBackground: '#2a2a3d',       // Darker navy (cards)
+  pageBackground: '#2a2a3d',       // Dark navy (main background)
+  cardBackground: '#4e4e6a',       // Darker navy (cards)
   avatarBackground: '#42425a',     // Grayish-purple (list avatars)
   textPrimary: '#ffffff',          // White (main text)
   textSecondary: '#aaaaaa',        // Light gray (secondary text)
