@@ -94,7 +94,7 @@ const ThreatUpdates = () => {
             <SecurityIcon />
           </Avatar>
           <Typography variant="h4" component="h1">
-            Threat Intelligence Dashboard
+            Threat Updates
           </Typography>
         </Stack>
         <Typography variant="subtitle1" sx={{ color: 'rgba(255,255,255,0.7)', mt: 1 }}>
