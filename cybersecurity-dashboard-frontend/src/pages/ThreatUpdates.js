@@ -55,7 +55,7 @@ const ThreatUpdates = () => {
   const [selectedThreat, setSelectedThreat] = useState(null);
 
   return (
-    <Box sx={{ p: 3, backgroundColor: '#1e1e2f', minHeight: '100vh', color: '#fff' }}>
+    <Box sx={{ p: 3, backgroundColor: '#b4b4b4', minHeight: '100vh', color: '#fff' }}>
       <Typography variant="h4" gutterBottom>
         Threat Updates
       </Typography>

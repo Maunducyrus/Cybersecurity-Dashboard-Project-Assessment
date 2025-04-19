@@ -39,7 +39,7 @@ const Sidebar = () => {
           width: 240,
           boxSizing: 'border-box',
           paddingTop: '20px',
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#f0f4f8',
         },
       }}
     >
