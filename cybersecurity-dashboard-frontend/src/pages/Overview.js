@@ -13,7 +13,6 @@ import {
   ListItemAvatar,
   ListItemText,
 } from '@mui/material';
-
 import {
   CalendarMonth,
   Notifications,
@@ -23,6 +22,19 @@ import {
   ArrowDownward,
 } from '@mui/icons-material';
 
+// ===== COLOR PALETTE (EASILY MODIFY THESE) =====
+const COLORS = {
+  pageBackground: '#1e1e2f',       // Dark navy (main background)
+  cardBackground: '#2a2a3d',       // Darker navy (cards)
+  avatarBackground: '#42425a',     // Grayish-purple (list avatars)
+  textPrimary: '#ffffff',          // White (main text)
+  textSecondary: '#aaaaaa',        // Light gray (secondary text)
+  success: '#4caf50',              // Green (positive metrics)
+  warning: '#ff9800',              // Orange (medium alerts)
+  error: '#ef5350',                // Red (negative metrics)
+  info: '#26c6da',                 // Cyan (neutral metrics)
+};
+
 const Overview = () => {
   const [tab, setTab] = React.useState(0);
 
@@ -31,13 +43,23 @@ const Overview = () => {
   };
 
   return (
-    <Box sx={{ backgroundColor: '#1e1e2f', minHeight: '100vh', p: 4, color: '#fff' }}>
+    <Box sx={{ 
+      backgroundColor: COLORS.pageBackground, 
+      minHeight: '100vh', 
+      p: 4, 
+      color: COLORS.textPrimary 
+    }}>
       <Typography variant="h4" gutterBottom>Dashboard Overview</Typography>
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography variant="subtitle1" gutterBottom sx={{ color: COLORS.textSecondary }}>
         Monitor your organization's cybersecurity metrics and updates
       </Typography>
 
-      <Tabs value={tab} onChange={handleTabChange} textColor="inherit" indicatorColor="primary">
+      <Tabs 
+        value={tab} 
+        onChange={handleTabChange} 
+        textColor="inherit" 
+        indicatorColor="primary"
+      >
         <Tab label="Weekly" />
         <Tab label="Monthly" />
         <Tab label="Yearly" />
@@ -52,14 +74,14 @@ const Overview = () => {
             icon: <Group />,
             growth: '+5%',
             trend: 'up',
-            color: '#4caf50',
+            color: COLORS.success, // Green
             note: 'vs. last month',
           },
           {
             title: 'Subscription Status',
             value: 'Active',
             icon: <CalendarMonth />,
-            color: '#26c6da',
+            color: COLORS.info, // Cyan
           },
           {
             title: 'Threat Updates',
@@ -67,7 +89,7 @@ const Overview = () => {
             icon: <Notifications />,
             growth: '-3%',
             trend: 'down',
-            color: '#ef5350',
+            color: COLORS.error, // Red
             note: 'vs. last month',
           },
           {
@@ -76,12 +98,12 @@ const Overview = () => {
             icon: <Book />,
             growth: '+10%',
             trend: 'up',
-            color: '#66bb6a',
+            color: COLORS.success, // Green
             note: 'vs. last month',
           },
         ].map((item, index) => (
           <Grid item xs={12} md={3} key={index}>
-            <Card sx={{ backgroundColor: '#2a2a3d', p: 2 }}>
+            <Card sx={{ backgroundColor: COLORS.cardBackground, p: 2 }}>
               <CardContent>
                 <Box display="flex" justifyContent="space-between" alignItems="center">
                   <Typography variant="subtitle1">{item.title}</Typography>
@@ -109,7 +131,7 @@ const Overview = () => {
       {/* Recent Activities */}
       <Box sx={{ mt: 4 }}>
         <Typography variant="h6" gutterBottom>Recent Activities</Typography>
-        <Card sx={{ backgroundColor: '#2a2a3d', p: 2 }}>
+        <Card sx={{ backgroundColor: COLORS.cardBackground, p: 2 }}>
           <List>
             {[
               {
@@ -130,9 +152,13 @@ const Overview = () => {
             ].map((activity, index) => (
               <ListItem key={index}>
                 <ListItemAvatar>
-                  <Avatar sx={{ bgcolor: '#42425a' }}>{activity.icon}</Avatar>
+                  <Avatar sx={{ bgcolor: COLORS.avatarBackground }}>{activity.icon}</Avatar>
                 </ListItemAvatar>
-                <ListItemText primary={activity.title} secondary={activity.time} />
+                <ListItemText 
+                  primary={activity.title} 
+                  secondary={activity.time} 
+                  secondaryTypographyProps={{ color: COLORS.textSecondary }}
+                />
               </ListItem>
             ))}
           </List>
